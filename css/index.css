@@ -1,0 +1,335 @@
+/*Общие стили*/
+a {
+  color: honeydew;
+  text-decoration: none;
+  transition: opacity 0.25s ease;
+}
+
+a:hover {
+  opacity: 69%;
+}
+
+.cls {
+  clear: both;
+}
+
+/*Header стили*/
+.header {
+  height: 105vh;
+  background: url(/source/coffee-communication-computer-desk-from-grey-hot-laptop-latt.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 87%, 50% 100%, 0 87%, 0 0);
+}
+
+.header-top {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: 80px;
+
+  color: honeydew;
+
+  background: rgba(82, 94, 78, 55%);
+}
+
+.logo {
+  font-size: 55px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.menu-element {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 15px;
+  font-size: 35px;
+}
+
+.home svg {
+  width: 24px;
+  height: 24px;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: calc(100vh - 80px);
+
+  color: honeydew;
+}
+
+.header-center-wrapper {
+  text-align: center;
+  margin-bottom: 8%;
+  width: 100%;
+  background: rgba(82, 94, 78, 55%);
+}
+
+.name {
+  font-size: 55px;
+  line-height: 66px;
+}
+
+.description {
+  display: inline-block;
+  width: 59ch;
+  font-size: 30px;
+  padding-bottom: 8px;
+  white-space: nowrap;
+  line-height: 1.1em;
+
+  border-right: 4px solid transparent;
+
+  overflow: hidden;
+
+  animation: cursor 0.2s 33, print-text 5s steps(69);
+}
+
+@keyframes cursor {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes print-text {
+  from {
+    width: 0;
+  }
+}
+
+/*Секция "Обо мне"*/
+.about-me {
+  display: flex;
+  margin-top: 2em;
+}
+
+.about-me-title {
+  font-style: oblique;
+}
+
+.about-me .left {
+  flex: 1 1 40%;
+}
+.about-me .right {
+  flex: 1 1 60%;
+  margin: auto;
+}
+
+.about-me-image {
+  width: 85%;
+  margin: auto;
+  padding-bottom: 1.5em;
+  border-radius: 11px;
+
+  filter: drop-shadow(-7px 7px 6px);
+}
+
+.about-me-description {
+  margin: 0.5em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+ul.about-me-extra {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.about-me-extra .bold {
+  margin-right: 5px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.about-me-extra-element {
+  display: flex;
+
+  margin: 0.5em;
+}
+
+.about-me-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.about-me-icon svg {
+  color: rgb(98, 122, 98);
+}
+
+/*Секция Интересы*/
+
+.interests {
+  padding-top: 2em;
+}
+
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.interest-wraper {
+  display: flex;
+  flex-direction: column;
+
+  width: 30%;
+  margin-bottom: 20px;
+  border-radius: 9px;
+  padding: 5%;
+  margin-right: 3%;
+
+  box-shadow: 5px 5px 13px 5px rgba(0, 0, 0, 0.53);
+}
+
+.interest-wraper:last-child {
+  width: 96%;
+}
+
+.interests-image {
+  padding: 3%;
+  align-items: center;
+}
+
+.interest-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.1em;
+
+  font-size: 25px;
+  font-weight: 600;
+
+  color: rgb(40, 102, 78);
+}
+
+.second-title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  border: 2px solid rgb(98, 122, 98);
+  border-right: 0px;
+  border-left: 0px;
+}
+
+/*Секция обратная связь*/
+
+.contact-me {
+  padding: 40px 0;
+}
+
+.contact-me-form {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.input-wrapper {
+  width: 48%;
+}
+
+.input-wrapper.left {
+  float: left;
+}
+
+.input-wrapper.right {
+  float: right;
+}
+
+.textarea-wrapper {
+  margin-top: 10px;
+}
+
+.label {
+  position: relative;
+  display: block;
+  font-size: 21px;
+}
+
+.label:before {
+  content: "";
+
+  justify-content: center;
+  align-items: center;
+
+  display: inline-flex;
+  width: 25px;
+  height: 25px;
+
+  margin-right: 5px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 5px 5px 5px 20px;
+  border: none;
+  outline: 1px solid rgb(5, 24, 5);
+}
+
+.input:focus,
+.textarea:focus {
+  outline: 2px solid rgb(71, 136, 71);
+}
+
+.input {
+  padding: 5px 5px 5px 20px;
+}
+
+.textarea {
+  padding: 20px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 60px;
+}
+
+.submit {
+  display: inline-block;
+  height: 45px;
+  padding: 10px 35px;
+
+  border: none;
+  background: rgb(98, 122, 98);
+  outline: none;
+  box-shadow: none;
+  color: #fff;
+}
+
+/*Секция подвал*/
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-element-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 10px;
+
+  width: 35px;
+  height: 35px;
+}
